@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FileReaderWriter.FileWriter
+﻿namespace FileReaderWriter.WriteOptions
 {
     public class FileWriter
     {
@@ -20,9 +14,9 @@ namespace FileReaderWriter.FileWriter
             _writer = writer;
         }
 
-        public void WriteToANewFile(string fileContent)
+        public void WriteToFile(string fileContent, string destPath)
         {
-            _writer.WriteToANewFile(fileContent);
+            _writer.WriteToFile(fileContent, destPath);
         }
     }
 }
