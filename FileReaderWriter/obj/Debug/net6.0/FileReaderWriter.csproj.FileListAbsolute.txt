@@ -1,0 +1,15 @@
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\obj\Debug\net6.0\FileReaderWriter.csproj.AssemblyReference.cache
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\obj\Debug\net6.0\FileReaderWriter.GeneratedMSBuildEditorConfig.editorconfig
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\obj\Debug\net6.0\FileReaderWriter.AssemblyInfoInputs.cache
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\obj\Debug\net6.0\FileReaderWriter.AssemblyInfo.cs
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\obj\Debug\net6.0\FileReaderWriter.csproj.CoreCompileInputs.cache
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\bin\Debug\net6.0\FileReaderWriter.exe
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\bin\Debug\net6.0\FileReaderWriter.deps.json
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\bin\Debug\net6.0\FileReaderWriter.runtimeconfig.json
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\bin\Debug\net6.0\FileReaderWriter.dll
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\bin\Debug\net6.0\FileReaderWriter.pdb
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\obj\Debug\net6.0\FileReaderWriter.dll
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\obj\Debug\net6.0\refint\FileReaderWriter.dll
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\obj\Debug\net6.0\FileReaderWriter.pdb
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\obj\Debug\net6.0\FileReaderWriter.genruntimeconfig.cache
+E:\Study\Internship Tasks\File Reader\FileReaderWriter\FileReaderWriter\obj\Debug\net6.0\ref\FileReaderWriter.dll
