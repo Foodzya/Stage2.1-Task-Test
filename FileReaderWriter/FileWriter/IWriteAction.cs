@@ -8,6 +8,6 @@ namespace FileReaderWriter.FileWriter
 {
     public interface IWriteAction
     {
-        public void WriteToANewFile();
+        public void WriteToANewFile(string fileContent);
     }
 }

@@ -8,7 +8,7 @@ namespace FileReaderWriter.FileWriter
 {
     public class ETxtWriter : IWriteAction
     {
-        public void WriteToANewFile()
+        public void WriteToANewFile(string fileContent)
         {
             throw new NotImplementedException();
         }

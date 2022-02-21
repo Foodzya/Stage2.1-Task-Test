@@ -19,5 +19,10 @@ namespace FileReaderWriter.FileWriter
         {
             _writer = writer;
         }
+
+        public void WriteToANewFile(string fileContent)
+        {
+            _writer.WriteToANewFile(fileContent);
+        }
     }
 }
