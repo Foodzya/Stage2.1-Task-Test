@@ -2,6 +2,6 @@
 {
     public interface IReadFormatter
     {
-        public string FormatContent(string path);
+        public string FormatContent(string content);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using FileReaderWriter.Menu;
+using FileReaderWriter.Menu.MenuStates;
 
 namespace FileReaderWriter 
 {
@@ -8,10 +9,9 @@ namespace FileReaderWriter
         {
             Logic logic = new Logic();
 
-            Menu menu = new FileReaderWriter.Menu(new ReadMenu());
-            menu.
+            logic.LaunchMenu();
 
-            logic.WriteFromRtxtToTxt(@"E:\Study\Internship Tasks\File Reader\new_file.rtxt", @"E:\Study\Internship Tasks\File Reader\destination.txt");
+            //logic.WriteFromRtxtToTxt(@"E:\Study\Internship Tasks\File Reader\new_file.rtxt", @"E:\Study\Internship Tasks\File Reader\destination.txt");
         }
     }
 }

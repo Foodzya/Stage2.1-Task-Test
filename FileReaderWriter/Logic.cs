@@ -1,6 +1,7 @@
 ﻿using FileReaderWriter.ReadOptions;
 using FileReaderWriter.WriteOptions;
-using System.IO;
+using FileReaderWriter.Menu;
+using System;
 
 namespace FileReaderWriter
 {
@@ -17,6 +18,15 @@ namespace FileReaderWriter
             FileWriter fileWriter = new FileWriter(new TxtWriter());
 
             fileWriter.WriteToFile(formattedContent, txtPath);
+        }
+
+        public void LaunchMenu()
+        {
+            MenuContext menu = new MenuContext();
+
+            menu.DisplayMenu();
+
+            Console.ReadLine();
         }
     }
 }
