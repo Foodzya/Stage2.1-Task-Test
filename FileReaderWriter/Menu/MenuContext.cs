@@ -1,0 +1,62 @@
+using FileReaderWriter.Menu.MenuStates;
+using System;
+
+namespace FileReaderWriter.Menu
+{
+    public class MenuContext
+    {
+        private MenuState _menuState;
+
+        public MenuContext()
+        {
+            _menuState = new MainMenuState();
+            _menuState.SetMenuContext(this);
+        }
+
+        public void ChangeMenuState(MenuState menuState)
+        {
+            Console.WriteLine($"MenuContext now is on {menuState.GetType().Name}");
+
+            _menuState = menuState;
+
+            _menuState.SetMenuContext(this);
+        }
+
+        public void ReadFromSpecificFile()
+        {
+            ChangeMenuState(new ReadMenuState());
+
+            _menuState.ReadFromSpecificFile();
+        }
+
+        public void WriteToSpecificFile()
+        {
+            ChangeMenuState(new WriteMenuState());
+
+            _menuState.WriteToSpecificFile();
+        }
+
+        public void PressBack()
+        {
+            if (!(_menuState is MainMenuState))
+            {
+                _menuState.PressBack();
+            }
+            else
+            {
+                Console.WriteLine("Do you wanna quit the app?");
+            }
+        }
+
+        public void PressSubmit()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DisplayMenu()
+        {
+            _menuState.DisplayMenu();
+        }
+
+    }
+}

@@ -1,14 +1,16 @@
 namespace FileReaderWriter.Menu.MenuStates 
 {
-    abstract class MenuState 
+    abstract public class MenuState 
     {
-        protected Menu _menu;
-
-        public SetMenu(Menu menu)
+        protected MenuContext _menuContext;
+        public abstract void ReadFromSpecificFile();
+        public abstract void WriteToSpecificFile();
+        public abstract void PressBack();
+        public abstract void PressSubmit();
+        public abstract void DisplayMenu();
+        public void SetMenuContext(MenuContext menuContext)
         {
-            _menu = menu;            
+            _menuContext = menuContext;
         }
-
-        public abstract void ReturnToPreviousMenu();
     }
 }
