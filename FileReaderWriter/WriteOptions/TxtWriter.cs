@@ -1,15 +1,24 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace FileReaderWriter.WriteOptions
 {
     public class TxtWriter : IWriteAction
     {
-        public void WriteToFile(string fileContent, string destPath)
+        public void WriteToFile(string fileContent, string targetFile)
         {
-            using (StreamWriter sw = File.CreateText(destPath))
+            try
             {
-                sw.WriteLine(fileContent);
-            }            
+                using (StreamWriter sw = File.CreateText(targetFile))
+                {
+                    sw.WriteLine(fileContent);
+                    Console.WriteLine("Succesfully saved!");
+                }
+            }
+            catch (UnauthorizedAccessException e)
+            {
+                Console.WriteLine(e.Message + "\nPlease specify txt file for writing there");
+            }                        
         }
     }
 }

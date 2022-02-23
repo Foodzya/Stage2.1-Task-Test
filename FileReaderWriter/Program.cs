@@ -1,5 +1,7 @@
 ﻿using FileReaderWriter.Menu;
 using FileReaderWriter.Menu.MenuStates;
+using System;
+using System.IO;
 
 namespace FileReaderWriter 
 {
@@ -12,6 +14,7 @@ namespace FileReaderWriter
             logic.LaunchMenu();
 
             //logic.WriteFromRtxtToTxt(@"E:\Study\Internship Tasks\File Reader\new_file.rtxt", @"E:\Study\Internship Tasks\File Reader\destination.txt");
+        
         }
     }
 }

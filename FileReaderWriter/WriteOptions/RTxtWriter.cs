@@ -4,7 +4,7 @@ namespace FileReaderWriter.WriteOptions
 {
     public class RTxtWriter : IWriteAction
     {
-        public void WriteToFile(string fileContent, string destPath)
+        public void WriteToFile(string fileContent, string targetFile)
         {
             throw new NotImplementedException();
         }

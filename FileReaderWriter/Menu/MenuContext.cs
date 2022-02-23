@@ -18,14 +18,14 @@ namespace FileReaderWriter.Menu
             Console.WriteLine($"MenuContext now is on {menuState.GetType().Name}");
 
             _menuState = menuState;
-
+            
             _menuState.SetMenuContext(this);
+            
+            _menuState.DisplayMenu();     
         }
 
         public void ReadFromSpecificFile()
         {
-            ChangeMenuState(new ReadMenuState());
-
             _menuState.ReadFromSpecificFile();
         }
 

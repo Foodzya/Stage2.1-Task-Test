@@ -7,30 +7,57 @@ namespace FileReaderWriter.ReadOptions
     {
         private IReadFormatter _formatter;
 
+        public FileReader()
+        {
+
+        }
+
         public FileReader(IReadFormatter formatter)
         {
             _formatter = formatter;
         }
 
-        public string FormatContent(string content)
+        private void SetFormatter(IReadFormatter formatter)
         {
-            return _formatter.FormatContent(content);
+            _formatter = formatter;
+        }
+
+        public void ValidateFileExtension(string path)
+        {
+            string extension = Path.GetExtension(path);
+
+            switch (extension)
+            {
+                case ".txt":
+                    SetFormatter(new TxtFormatter());
+                    break;
+                case ".rtxt":
+                    SetFormatter(new RTxtFormatter());
+                    break;
+                case ".etxt":
+                    SetFormatter(new ETxtFormatter());
+                    break;
+                case ".btxt":
+                    SetFormatter(new BTxtFormatter());
+                    break;
+                default:
+                    Console.WriteLine("This file type is unsupported.");
+                    break;
+            }
         }
 
         public string ReadContentFromFile(string path)
         {
-            string content = string.Empty;
+            ValidateFileExtension(path);
 
-            if (File.Exists(path))
-            {
-                return content = File.ReadAllText(path);
-            }
-            else
-            {
-                Console.WriteLine("File doesn't exist. Please re-try...");
-            }
+            string content = File.ReadAllText(path);
 
-            return string.Empty;
+            return FormatContent(content);
+        }
+
+        private string FormatContent(string content)
+        {
+            return _formatter.FormatContent(content);
         }
     }
 }

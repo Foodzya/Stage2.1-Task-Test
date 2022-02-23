@@ -2,6 +2,6 @@
 {
     public interface IWriteAction
     {
-        public void WriteToFile(string fileContent, string destPath);
+        public void WriteToFile(string fileContent, string targetFile);
     }
 }

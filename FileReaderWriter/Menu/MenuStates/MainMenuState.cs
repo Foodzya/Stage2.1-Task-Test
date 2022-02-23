@@ -28,10 +28,12 @@ namespace FileReaderWriter.Menu.MenuStates
         }
         public override void DisplayMenu()
         {
-            Console.WriteLine("Select which action you would like to perform...\n" +
-                "1 Read from file with one of the above specific types (txt, rtxt, etxt, btxt)\n" +
-                "2 Read from txt file or console and write to a new file with specific type (txt, rtxt, etxt, btxt\n" +
-                "3 Quit application");
+            Console.WriteLine("MAIN MENU\n" +
+                "—————————————————————————————\n" +
+                "1 -- Read from a file (only txt, rtxt, etxt, btxt)\n" +
+                "2 -- Write to a file (only txt, rtxt, etxt, btxt)\n" +
+                "3 -- Quit the application");
+
              switch (Console.ReadKey().Key)
             {
                 case ConsoleKey.D1:
